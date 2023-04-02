@@ -1,0 +1,324 @@
+@import "../../../../node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@100;200;300;400;500;700&display=swap');
+@import url('https://kit.fontawesome.com/be05e4c482.css');
+
+/*Variables*/
+
+$black: rgb(21, 21, 30);
+$darkgrey: rgb(165, 165, 173);
+$grey: #d7d7d7;
+$lightgrey: #f9f9f9;
+$white: rgb(250, 248, 248);
+
+body {
+  background-color: $lightgrey;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  color: $black;
+}
+
+/* Navbar */
+.navbar {
+  box-shadow: 0px 1px 2px rgb(208, 195, 185);
+  background-color: $white;
+  padding-top: 1rem;
+  flex-direction: column;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+.navbar a{
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  color: $black;
+  margin: 0 1rem;
+}
+
+.navbar a:hover {
+  text-shadow: 1px 1px 2px $grey;
+  text-underline-offset: 4px;
+}
+.navbar h4 {
+  font-weight: 700;
+}
+
+/* Hero */
+
+.hero {
+  background-image: url(../images/hero-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  padding: 2rem;
+}
+
+/* Header */
+.header-title {
+  font-weight: 500;
+  font-size: 64px;
+}
+
+.header h6 {
+  font-weight: 300;
+  font-size: 32px;
+}
+
+
+.picture {
+  padding: 1rem 1rem 3rem 1rem;
+  background-color: $white;
+  box-shadow: 2px 2px 4px $grey;
+  border-radius: 2px;
+  max-width: 328px;
+  margin: 0 auto;
+}
+
+
+.under-title {
+  justify-content: center;
+}
+
+.tag {
+  background-color: $lightgrey;
+  padding: 0.5rem 1rem;
+  border-radius: 24px;
+  border: 2px solid $black;
+  margin: 0.5rem;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+
+/* Divisor */
+
+.divisor-wrapper {
+  background-color: $grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  height: 35vh;
+}
+
+.divisor {
+  flex-shrink: 0;
+  position: absolute;
+  height: 48px;
+  background-image: url(../images/tape.png);
+  width: 120%;
+  transition: width 0.5s;
+}
+
+.divisor-left {
+  transform: rotate(3deg);
+}
+.divisor-right {
+  transform: rotate(357deg);
+}
+
+.divisor:hover {
+  width: 150%;
+}
+
+/* About */
+.about {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  background-color: $grey;
+}
+
+.about .container-title {
+  background-image: url(images/stroke1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: left;
+}
+
+.container-title {
+  font-weight: 500;
+  font-size: 56px;
+}
+
+.text-main {
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.text-second {
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+/* Projects */
+
+.projects {
+  background-color: $darkgrey;
+}
+
+.thumbnail img {
+  max-width: 100%;
+}
+
+.card {
+  background-color: $white;
+  background-size: cover;
+  box-shadow: 1px 1px 2px rgba(40, 40, 40, 0.5);
+  margin: 2rem 0;
+}
+
+.card-content {
+  padding: 2rem;
+  padding-bottom: 0;
+  position: relative;
+}
+
+.card-header {
+  background-color: $white;
+  padding: 0;
+  margin-bottom: 2rem;
+  border-bottom: none;
+}
+
+.card-links {
+  padding: 1rem;
+  padding-bottom: 0;
+  position: relative;
+  bottom: 0;
+}
+
+.card-button {
+  border-radius: 1px;
+  color: $black;
+  padding: 1rem;
+  background-color: rgba(40, 40, 40, 0.1);
+  margin-left: 4px;
+  margin-bottom: 0;
+  transition: background-color 0.2s;
+  text-decoration: none;
+}
+
+.card-button:hover {
+  color: $black;
+  background-color: rgba(140, 140, 140, 0.1);
+}
+
+/*Get in touch*/
+
+.form-button {
+  border-radius: 1px;
+  background-color: rgba(80, 80, 80, 0.2);
+  border: none;
+  padding: 0.5rem;
+  transition: background-color 0.2s;
+}
+
+.form-button:hover {
+  box-shadow: 1px 1px 1px $grey;
+  color: $black;
+  background-color: rgba(40, 40, 40, 0.3);
+}
+
+.form-field{
+  outline: none;
+  border: none;
+  box-shadow: 1px 1px 2px $grey;
+}
+
+.form-field:focus {
+  outline: none;
+  border: none;
+  box-shadow: -1px -1px 2px $darkgrey;
+}
+
+.title-second {
+  color: $darkgrey;
+}
+
+.medias a {
+  padding: 1rem 1rem 2rem 1rem;
+}
+
+.icon {
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 2px;
+  width: 64px;
+  height: 64px;
+  display: block;
+  color: blue;
+}
+
+.medias a:hover {
+  background-color: rgba(40, 40, 40, 0.1);
+}
+.linkedin-icon {
+  background-image: url(../icons/linkedin-original.svg);
+}
+.whats-icon {
+  background-image: url(../icons/whatsapp.svg);
+}
+.mail-icon {
+  background-image: url(https://svgshare.com/i/q1m.svg);
+}
+.gh-icon {
+  background-image: url(../icons/github.svg);
+}
+
+.footer {
+  padding: 1rem;
+  background-color: rgba(40, 40, 40, 1);
+}
+.footer h5 {
+  color: $white;
+  text-align: center;
+  margin: 0;
+}
+
+/* RUNR PAGE */
+
+.scroll {
+  text-align: center;
+  font-weight: 300;
+  padding: 1rem;
+}
+
+.divisor.runr {
+  background-image: url(../images/runr-tape.png);
+}
+
+@include media-breakpoint-up(lg) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 4rem;
+    position: sticky;
+    top: 0;
+  }
+
+  .navbar-item {
+    margin: 0.5rem;
+  }
+  .hero{
+    flex-direction: row;
+    height: 540px;
+    padding: 4rem;
+  }
+  .header-title {
+    font-size: 96px;
+    line-height: 0.9;
+  }
+
+  .header h6 {
+    font-size: 56px;
+  }
+
+  .under-title {
+    justify-content: start;
+  }
+  .picture {
+    height: auto;
+  }
+}
