@@ -1,1 +1,189 @@
-works
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gustavo Meneses - Fullstack</title>
+</head>
+
+<body>
+  <section class="navbar">
+    <div class="logo">
+      <h4>GUSTAVO MENESES</h4>
+    </div>
+    <div class="navigation d-flex">
+      <a href="/pt-portfolio/test.html" class="navbar-item">Home</a>
+      <a href="#about" class="navbar-item">About me</a>
+      <a href="#projects" class="navbar-item">Projects</a>
+      <a href="#contact" class="navbar-item">Get in touch</a>
+    </div>
+  </section>
+  <section class="back">
+    <a href="#home" class="back-top">
+      <div class="arrow"></div>
+    </a>
+  </section>
+  <section class="hero container-fluid" id="home">
+    <div class="container d-flex justify-content-around flex-column flex-lg-row">
+      <div class="wrapper col-12 col-lg-6">
+        <div class="header">
+          <h6>Hello, I'm</h6>
+          <h1 class="header-title">Gustavo<br>Meneses</h1>
+        </div>
+        <div class="under-title d-flex flex-wrap">
+          <div class="tag"><span>👨‍💻</span>Full Stack Developer</div>
+          <div class="tag"><span>🚅</span>Rails lover</div>
+          <div class="tag"><span>🤘</span>Enthusiast musician</div>
+        </div>
+      </div>
+      <div class="wrapper col-12 col-lg-3">
+        <div class="picture">
+          <img src="https://i.imgur.com/gTbrYki.jpg" alt="Picture of Gustavo smiling to the camera"
+            class="col-12 img-fluid">
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <div class="divisor-wrapper">
+    <div class="d-flex justify-content-center">
+      <div class="divisor divisor-left"></div>
+      <div class="divisor divisor-right"></div>
+    </div>
+  </div>
+
+  <section class="about container-fluid" id="about">
+    <div class="container d-flex container pt-4 pb-4 flex-column flex-lg-row">
+      <div class="title col-12 col-lg-4 d-block text-start mb-4">
+        <div class="container-title">Who am I...</div>
+      </div>
+      <div class="content col-12 col-lg-8">
+        <div class="text-main col-12">
+          I am Gustavo Meneses, born and raised in Curitiba, Brazil. Decided to find out more about the world and now I
+          am a Full stack developer in the UK! My love from computers and machines goes back to since I was a little boy
+          and started playing around with them, fixing problems so I could play my own games.
+        </div>
+        <div class="text-second col-11">
+          I graduated from a bootcamp with LeWagon where I was able to learn how to set up webpages with Ruby on Rails,
+          in the last few days I am learning how to make a page seem fast and responsive with Hotwired. Of course it
+          goes without saying that I can talk to a database using SQL, build APIs and get them to respond to me with
+          their JSONs. My passion is the back-end because it sounds more like computer dark magics.
+        </div>
+        <div class="tags d-flex flex-wrap mt-2">
+          <div class="tag">Rails</div>
+          <div class="tag">Postgresql</div>
+          <div class="tag">Javascript</div>
+          <div class="tag">Hotwire</div>
+          <div class="tag">CSS</div>
+          <div class="tag">Bootstrap</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects container-fluid" id="projects">
+    <div class="container d-flex justify-content-between container pt-4 pb-4 flex-column">
+      <div class="title d-block text-start mb-4">
+        <span class="container-title">Projects</span>
+      </div>
+      <div class="cards-wrapper col-12">
+        <div class="card d-flex flex-column flex-lg-row" id="mobbilar">
+          <div class="thumbnail image-fluid col-12 col-lg-5">
+            <img src="https://i.imgur.com/UkDMwVI.png" alt="">
+
+          </div>
+          <div class="d-flex flex-column justify-content-between">
+            <div class="card-content d-flex flex-column align-items-start">
+              <div class="card-header">
+                <h3 class="card-title">Mobbilar - Landing page for a beautiful company</h3>
+              </div>
+              <div class="card-description">
+                <p>A landing page I built for an entrepeunour and friend of mine. He owns a company that helps lots of
+                  people in
+                  Brazil to
+                  design their perfect home. So I’ve built this landing page as a channel for him to communicate with
+                  new
+                  customers. I
+                  used bootstrap as a library to help me keep this website in good shape in various sized devices.</p>
+              </div>
+            </div>
+            <div class="card-links col-12 d-flex justify-content-end">
+              <a href="http://www.mobbilar.com.br" class="card-button" target="_blank">See website</a>
+              <a href="https://github.com/gdameneses/static_mobbilar" class="card-button" target="_blank">Check code &lt
+                / &gt</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="card d-flex flex-column flex-lg-row" id="runr">
+          <div class="thumbnail image-fluid col-12 col-lg-5">
+            <img src="https://i.imgur.com/P5oR11s.png" alt="">
+
+          </div>
+          <div class="d-flex flex-column justify-content-between">
+            <div class="card-content d-flex flex-column align-items-start">
+              <div class="card-header">
+                <h3 class="card-title">RUNR - A shift management tool (developing)</h3>
+              </div>
+              <div class="card-description">
+                <p>RUNR is a web application to help Shift managers in fast paced environments run shifts smoothly.
+                  Helping to visualize and manipulate information and bringing most important information forward. This
+                  website is being
+                  build using Ruby on Rails and lots of bootstrap. More information available soon.
+                </p>
+              </div>
+            </div>
+            <div class="card-links col-12 d-flex justify-content-end">
+              <a href="https://github.com/gdameneses/runr#readme" class="card-button">Read more..</a>
+
+              <a href="https://www.github.com/gdameneses/runr" class="card-button" target="_blank">Check code &lt /
+                &gt</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact container-fluid" id="contact">
+    <div class="container pt-4 pb-4 d-flex flex-column flex-lg-row justify-content-between">
+      <div class="form col-12 col-lg-6">
+        <div class="title text-start mb-4">
+          <span class="container-title">Get in touch</span>
+        </div>
+        <form action="https://mailthis.to/gdameneses@gmail.com" method="POST" target="_blank">
+          <div class="form-body d-flex flex-column">
+            <input type="email" name="_replyto" placeholder="Your email" class="form-field m-1">
+            <input type="text" name="message" placeholder="What would you like to say?" class="form-field m-1"
+              style="height: 6rem">
+            <div>
+              <input type="submit" value="Send Email" class="form-button m-1">
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="other col-12 col-lg-5">
+        <div class="title mb-4">
+          <span class="container-title title-second">Other ways...</span>
+        </div>
+        <div class="medias d-flex flex-wrap justify-content-between">
+          <a href="https://www.linkedin.com/in/gdameneses/"><i class="linkedin-icon icon"></i></a>
+          <a href="https://www.github.com/gdameneses/"><i class="gh-icon icon"></i></a>
+          <a href="mailto:gdameneses@gmail.com"><i class="mail-icon icon"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="footer">
+    <h5>gdameneses@gmail.com</h5>
+  </section>
+
+</body>
+
+</html>
