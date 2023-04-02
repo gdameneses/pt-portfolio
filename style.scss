@@ -1,4 +1,4 @@
-@import "../../../../node_modules/bootstrap/scss/bootstrap";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@100;200;300;400;500;700&display=swap');
 @import url('https://kit.fontawesome.com/be05e4c482.css');
 
@@ -20,26 +20,41 @@ body {
 .navbar {
   box-shadow: 0px 1px 2px rgb(208, 195, 185);
   background-color: $white;
-  padding-top: 1rem;
+  padding: 2rem;
   flex-direction: column;
-  width: 100%;
+  height: 100vh;
   top: 0;
   z-index: 1;
 }
 
+.navbar .logo {
+  padding: 1rem;
+}
 .navbar a{
   text-decoration: underline;
   text-decoration-thickness: 1px;
   color: $black;
-  margin: 0 1rem;
+  margin: 0;
+  padding: 0;
 }
 
-.navbar a:hover {
-  text-shadow: 1px 1px 2px $grey;
-  text-underline-offset: 4px;
-}
+
 .navbar h4 {
+  margin: 0;
   font-weight: 700;
+}
+
+.navbar a {
+  padding: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+}
+
+.navigation {
+  flex-grow: 1;
+  justify-content: space-around;
 }
 
 /* Hero */
@@ -292,15 +307,37 @@ body {
 @include media-breakpoint-up(lg) {
   .navbar {
     display: flex;
-    flex-direction: row;
-    padding: 1rem 4rem;
+    padding: 0;
     position: sticky;
     top: 0;
+    width: 100%;
+    height: 64px;
+    align-content: space-between;
+  }
+
+  .navbar a {
+    padding: 0;
+    transition: 0.5s;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar a:hover {
+    text-shadow: 1px 1px 2px $grey;
+    text-underline-offset: 4px;
+    background-color: rgba(40, 40, 40, 0.1);
   }
 
   .navbar-item {
     margin: 0.5rem;
   }
+
+  .navbar .logo {
+    padding: 1rem;
+    margin: 0;
+  }
+
   .hero{
     flex-direction: row;
     height: 540px;
