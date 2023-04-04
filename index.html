@@ -10,14 +10,14 @@
 <body>
   <section class="navbar">
     <div class="logo d-flex">
-      <div class="">
+      <div class="p-3">
         <h4>GUSTAVO MENESES</h4>
       </div>
       <div class="btn-collapse">
         O
       </div>
     </div>
-    <div class="navigation navigation-active flex-column flex-lg-row">
+    <div class="navigation flex-column flex-lg-row">
       <a href="#home" class="navbar-item">Início</a>
       <a href="#about" class="navbar-item">Sobre mim</a>
       <a href="#projects" class="navbar-item">Projetos</a>
@@ -140,38 +140,48 @@
     </div>
   </section>
 
-    <section class="contact container-fluid" id="contact">
-      <div class="container pt-4 pb-4 d-flex flex-column flex-lg-row justify-content-between">
-        <div class="form col-12 col-lg-6">
-          <div class="title text-start mb-4">
-            <span class="container-title">Fale comigo</span>
-          </div>
-          <form action="https://mailthis.to/gdameneses@gmail.com" method="POST" target="_blank">
-            <div class="form-body d-flex flex-column">
-              <input type="email" name="_replyto" placeholder="Seu email" class="form-field m-1">
-              <input type="text" name="message" placeholder="O que você gostaria de dizer?" class="form-field m-1"style="height: 6rem">
-              <div>
-                <input type="submit" value="Enviar" class="form-button m-1">
-              </div>
-            </div>
-          </form>
+  <section class="contact container-fluid" id="contact">
+    <div class="container pt-4 pb-4 d-flex flex-column flex-lg-row justify-content-between">
+      <div class="form col-12 col-lg-6">
+        <div class="title text-start mb-4">
+          <span class="container-title">Fale comigo</span>
         </div>
+        <form action="https://mailthis.to/gdameneses@gmail.com" method="POST" target="_blank">
+          <div class="form-body d-flex flex-column">
+            <input type="email" name="_replyto" placeholder="Seu email" class="form-field m-1">
+            <input type="text" name="message" placeholder="O que você gostaria de dizer?" class="form-field m-1"style="height: 6rem">
+            <div>
+              <input type="submit" value="Enviar" class="form-button m-1">
+            </div>
+          </div>
+        </form>
+      </div>
 
-        <div class="other col-12 col-lg-5">
-          <div class="title mb-4">
-            <span class="container-title title-second">Outras redes...</span>
-          </div>
-          <div class="medias d-flex flex-wrap justify-content-between">
-            <a href="https://www.linkedin.com/in/gdameneses/"><i class="linkedin-icon icon"></i></a>
-            <a href="https://www.github.com/gdameneses/"><i class="gh-icon icon"></i></a>
-            <a href="mailto:gdameneses@gmail.com"><i class="mail-icon icon"></i></a>
-          </div>
+      <div class="other col-12 col-lg-5">
+        <div class="title mb-4">
+          <span class="container-title title-second">Outras redes...</span>
+        </div>
+        <div class="medias d-flex flex-wrap justify-content-between">
+          <a href="https://www.linkedin.com/in/gdameneses/"><i class="linkedin-icon icon"></i></a>
+          <a href="https://www.github.com/gdameneses/"><i class="gh-icon icon"></i></a>
+          <a href="mailto:gdameneses@gmail.com"><i class="mail-icon icon"></i></a>
         </div>
       </div>
-    </section>
-    <section class="footer">
-      <h5>gdameneses@gmail.com</h5>
-    </section>
-
+    </div>
+  </section>
+  <section class="footer">
+    <h5>gdameneses@gmail.com</h5>
+  </section>
+<script>
+const collapseButton = document.querySelector(".btn-collapse");
+const navigation = document.querySelector(".navigation");
+const navbar = document.querySelector(".navbar");
+collapseButton.addEventListener("click", event => {
+  navbar.classList.toggle("navbar-expanded");
+  setTimeout(function () {
+    navigation.classList.toggle("navigation-active");
+  }, 200);
+});
+</script>
 </body>
 </html>
