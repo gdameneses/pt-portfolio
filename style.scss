@@ -369,6 +369,8 @@ body {
   }
 
   .hero{
+    position: relative;
+    top: 64px;
     flex-direction: row;
     height: 540px;
     padding: 4rem;

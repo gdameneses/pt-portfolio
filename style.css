@@ -10888,7 +10888,7 @@ body {
 
 /* Hero */
 .hero {
-  background-image: url(../images/hero-bg.png);
+  background-image: url(images/hero-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
@@ -10944,7 +10944,7 @@ body {
   flex-shrink: 0;
   position: absolute;
   height: 48px;
-  background-image: url(../images/tape.png);
+  background-image: url(images/tape.png);
   width: 120%;
   transition: width 0.5s;
 }
@@ -11094,11 +11094,11 @@ body {
 }
 
 .linkedin-icon {
-  background-image: url(../icons/linkedin-original.svg);
+  background-image: url(icons/linkedin-original.svg);
 }
 
 .whats-icon {
-  background-image: url(../icons/whatsapp.svg);
+  background-image: url(icons/whatsapp.svg);
 }
 
 .mail-icon {
@@ -11106,7 +11106,7 @@ body {
 }
 
 .gh-icon {
-  background-image: url(../icons/github.svg);
+  background-image: url(icons/github.svg);
 }
 
 .footer {
@@ -11128,7 +11128,7 @@ body {
 }
 
 .divisor.runr {
-  background-image: url(../images/runr-tape.png);
+  background-image: url(images/runr-tape.png);
 }
 
 @media (min-width: 992px) {
@@ -11169,6 +11169,8 @@ body {
     display: none;
   }
   .hero {
+    position: relative;
+    top: 64px;
     flex-direction: row;
     height: 540px;
     padding: 4rem;
