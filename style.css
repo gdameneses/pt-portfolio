@@ -11133,6 +11133,7 @@ body {
 
 @media (min-width: 992px) {
   .navbar {
+    box-shadow: 0 0 4px 0 rgb(80, 80, 120);
     display: flex;
     padding: 0;
     top: 0;

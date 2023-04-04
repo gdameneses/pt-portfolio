@@ -11,8 +11,10 @@
 
 <body>
   <section class="navbar">
-    <div class="logo">
-      <h4>GUSTAVO MENESES</h4>
+    <div class="logo d-flex">
+      <div class="p-3 navbar-logo">
+        <h4>GUSTAVO MENESES</h4>
+      </div>
     </div>
     <div class="navigation d-flex flex-column flex-lg-row">
       <a href="#home" class="navbar-item">Home</a>
@@ -184,7 +186,23 @@
   <section class="footer">
     <h5>gdameneses@gmail.com</h5>
   </section>
+<script>
+  // Sets important elements based on the unique class name I given them
+  const collapseButton = document.querySelector(".btn-collapse");
+  const navigation = document.querySelector(".navigation");
+  const navbar = document.querySelector(".navbar");
 
+
+  navbar.addEventListener("click", event => {
+    navbar.classList.toggle("navbar-expanded");
+    navigation.classList.toggle("navigation-active");
+  });
+
+  navbar.addEventListener("mouseleave", event => {
+    navbar.classList.remove("navbar-expanded");
+    navigation.classList.remove("navigation-active");
+  });
+</script>
 </body>
 
 </html>
