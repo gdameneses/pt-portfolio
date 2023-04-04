@@ -10883,11 +10883,14 @@ body {
 }
 
 .navigation-active {
+  flex-grow: 1;
   top: 0vh;
 }
 
 /* Hero */
 .hero {
+  position: relative;
+  top: 64px;
   background-image: url(images/hero-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -11118,17 +11121,6 @@ body {
   color: rgb(250, 248, 248);
   text-align: center;
   margin: 0;
-}
-
-/* RUNR PAGE */
-.scroll {
-  text-align: center;
-  font-weight: 300;
-  padding: 1rem;
-}
-
-.divisor.runr {
-  background-image: url(images/runr-tape.png);
 }
 
 @media (min-width: 992px) {
