@@ -81,8 +81,6 @@ body {
 /* Hero */
 
 .hero {
-  position: relative;
-  top: 64px;
   background-image: url(images/hero-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -363,7 +361,6 @@ body {
     position: relative;
     top: 64px;
     flex-direction: row;
-    height: 540px;
     padding: 4rem;
   }
   .header-title {
