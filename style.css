@@ -10822,7 +10822,7 @@ textarea.form-control-lg {
 }
 /*aaVariables*/
 body {
-  background-color: #f9f9f9;
+  background-color: #d7d7d7;
   font-family: "IBM Plex Sans Condensed", sans-serif;
   color: rgb(21, 21, 30);
 }
@@ -10920,7 +10920,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
-  padding: 2rem;
+  padding: 6rem 2rem 2rem 2rem;
 }
 
 /* Header */
@@ -10958,8 +10958,9 @@ body {
 }
 
 /* Divisor */
-.divisor-wrapper {
-  background-color: #d7d7d7;
+/*  divisor css */
+.divisors {
+  background-color: rgba(255, 100, 100, 0);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10968,11 +10969,17 @@ body {
   height: 35vh;
 }
 
+.divisors-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .divisor {
   flex-shrink: 0;
   position: absolute;
   height: 48px;
   background-image: url(images/tape.png);
+  background-color: rgba(0, 0, 0, 0);
   width: 120%;
   transition: width 0.5s;
 }
@@ -11073,6 +11080,10 @@ body {
 }
 
 /*Get in touch*/
+.contact {
+  background-color: #f9f9f9;
+}
+
 .form-button {
   border-radius: 1px;
   background-color: rgba(80, 80, 80, 0.2);

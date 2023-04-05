@@ -11,7 +11,7 @@ $lightgrey: #f9f9f9;
 $white: rgb(250, 248, 248);
 
 body {
-  background-color: $lightgrey;
+  background-color: $grey;
   font-family: 'IBM Plex Sans Condensed', sans-serif;
   color: $black;
 }
@@ -105,7 +105,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
-  padding: 2rem;
+  padding: 6rem 2rem 2rem 2rem;
 }
 
 /* Header */
@@ -147,8 +147,10 @@ body {
 
 /* Divisor */
 
-.divisor-wrapper {
-  background-color: $grey;
+/*  divisor css */
+
+.divisors {
+  background-color: rgba(255, 100, 100, 0);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -157,11 +159,17 @@ body {
   height: 35vh;
 }
 
+.divisors-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .divisor {
   flex-shrink: 0;
   position: absolute;
   height: 48px;
   background-image: url(images/tape.png);
+  background-color: rgba(0,0,0,0);
   width: 120%;
   transition: width 0.5s;
 }
@@ -169,6 +177,7 @@ body {
 .divisor-left {
   transform: rotate(3deg);
 }
+
 .divisor-right {
   transform: rotate(357deg);
 }
@@ -262,6 +271,10 @@ body {
 }
 
 /*Get in touch*/
+
+.contact {
+  background-color: $lightgrey;
+}
 
 .form-button {
   border-radius: 1px;
