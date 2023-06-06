@@ -1,9 +1,7 @@
-@import "../../../node_modules/bootstrap/scss/bootstrap";
+@import "css/bootstrap.css";
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@100;200;300;400;500;700&display=swap');
-//  @import url('https://kit.fontawesome.com/be05e4c482.css');
 
 /*aaVariables*/
-
 $black: rgb(21, 21, 30);
 $darkgrey: rgb(165, 165, 173);
 $grey: #d7d7d7;
@@ -243,8 +241,16 @@ body {
 .card-header {
   background-color: $white;
   padding: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 0rem;
   border-bottom: none;
+}
+
+p.card-text {
+  margin-top: 2rem;
+}
+
+p.card-subtext {
+  color: #666;
 }
 
 .card-links {
@@ -346,7 +352,7 @@ body {
   margin: 0;
 }
 
-@include media-breakpoint-up(lg) {
+@media (min-width: 640px) {
   .navbar {
     box-shadow: 0 0 4px 0 rgb(80, 80, 120);
     display: flex;
